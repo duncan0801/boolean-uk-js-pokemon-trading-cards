@@ -37,9 +37,11 @@ m= a counter going from 0- stats.length
 
 console.log(data);
 
-//1. Create a function that creates all the elements of the card
-//2. create a function that organises all the elements together
-// let numberOfPokemonCards = 5
+//1. Create a function that creates and appends name/title
+//2. Create a function that creates and appends image
+//3. Create a function that creates and appends the card info
+//4. create a function that organises all the elements together
+
 function generateCards () {
 
     for (let i = 0; i <= data.length; i++) {
@@ -57,6 +59,8 @@ function generateCards () {
             let cardImage = document.createElement("img")
             cardImage.setAttribute("class", "card--img")
             cardImage.setAttribute("src", data[i].sprites.other["official-artwork"].front_default)
+            cardImage.setAttribute("width", "256px")
+
             cardImage.setAttribute("alt", `A photo of the pokemon ${data[i].name}.`)
             cardDiv.appendChild(cardImage)
         }
