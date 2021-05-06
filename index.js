@@ -76,23 +76,19 @@ function generateCards () {
             }
             generateCardText()
         }
-        // function generateGameInfo() {
-        //     let gameSection = document.createElement("section")
-        //     let gameSectionInfo = document.createElement("p")
-        //     gameSection.setAttribute("class", "game-section")
-        //     gameSectionInfo.setAttribute("class", "game-section-info")
-        //     gameSectionInfo.innerText = `The games that ${data[i].name} appeared in are:\n`
+        function generateGameInfo() {
+            let gameSection = document.createElement("section")
+            let gameSectionInfo = document.createElement("p")
+            gameSection.setAttribute("class", "game-section")
+            gameSectionInfo.setAttribute("class", "game-section-info")
+            gameSectionInfo.innerText = `The games that ${data[i].name} appeared in are:\n`
 
-        //     for (n = 0; n <= data[i].game_indices.length; n++ ) {
-        //         gameSectionInfo.innerText = `${data[i].game_indices[n].version.name},`
-        //         console.log(gameSectionInfo)
-        //     }
-        //     gameSection.append(gameSectionInfo)
-        //     cardDiv.append(gameSection)
-
+            // for (n=0; n <= data[i].game_indices.length; n++ ) {
+            //     gameSectionInfo.innerText =+ `${data[i].game_indices[n].version.name},`
+            // }
             
 
-        // }
+        }
 
         generateTitle()
         generateImage()
